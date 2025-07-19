@@ -12,11 +12,11 @@ In the realm of descriptive statistics, percentiles and quartiles are fundamenta
 A **percentile** is a value below which a certain percentage of observations in a dataset lie. It indicates the relative standing of a specific value within a distribution, expressed as a percentage. For example, if a value is at the 78th percentile, it means that 78% of the data points in the dataset are less than or equal to that value.
 
 ### Calculating the Percentile of a Specific Value
-To calculate the percentile rank of a given value \( x \) in a dataset, the following formula is used:
+To calculate the percentile rank of a given value $ x $ in a dataset, the following formula is used:
 
-\[
+$$
 \text{Percentile Rank} = \left( \frac{\text{Number of values below } x}{\text{Total number of values (n)}} \right) \times 100
-\]
+$$
 
 #### Example
 Consider the dataset: [2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 8, 9, 9, 10]. Suppose we want to find the percentile rank of the value 9.
@@ -24,24 +24,24 @@ Consider the dataset: [2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 8, 9, 9, 10]. Suppose we wa
 1. **Count the number of values below 9**:
    - Values: 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 8 (11 values are less than 9).
 2. **Determine the total number of values**:
-   - Total sample size (\( n \)) = 14.
+   - Total sample size ($ n $) = 14.
 3. **Apply the formula**:
-   \[
+   $$
    \text{Percentile Rank} = \left( \frac{11}{14} \right) \times 100 \approx 78.57
-   \]
+   $$
 
 Thus, the value 9 is at approximately the **78.57th percentile**, meaning that 78.57% of the data points in this dataset are less than or equal to 9. This percentile rank provides a clear understanding of where 9 stands relative to the rest of the distribution.
 
 ### Calculating a Specific Percentile
-When given a percentile (e.g., the 25th percentile), we need to find the value below which that percentage of the data lies. The formula for finding the position of the \( p \)-th percentile in a sorted dataset is:
+When given a percentile (e.g., the 25th percentile), we need to find the value below which that percentage of the data lies. The formula for finding the position of the $ p $-th percentile in a sorted dataset is:
 
-\[
+$$
 \text{Position} = \frac{p}{100} \times (n + 1)
-\]
+$$
 
 Where:
-- \( p \): Desired percentile (e.g., 25 for the 25th percentile).
-- \( n \): Total number of data points.
+- $ p $: Desired percentile (e.g., 25 for the 25th percentile).
+- $ n $: Total number of data points.
 
 If the position is not an integer, interpolation is used to estimate the percentile value by averaging the values at the surrounding positions.
 
@@ -49,17 +49,17 @@ If the position is not an integer, interpolation is used to estimate the percent
 Using the same dataset: [2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 8, 9, 9, 10], calculate the 25th percentile.
 
 1. **Determine the position**:
-   \[
+   $$
    \text{Position} = \frac{25}{100} \times (14 + 1) = 0.25 \times 15 = 3.75
-   \]
+   $$
 2. **Interpret the position**:
    - The position 3.75 lies between the 3rd and 4th values in the sorted dataset.
    - 3rd value = 3, 4th value = 4.
 3. **Interpolate**:
    - Since 3.75 is between the 3rd and 4th positions, take the average of the 3rd and 4th values:
-     \[
+     $$
      \text{25th Percentile} = \frac{3 + 4}{2} = 3.5
-     \]
+     $$
 
 Thus, the **25th percentile** is approximately 3.5, meaning that 25% of the data points are less than or equal to 3.5. This value does not exist in the dataset but is an interpolated estimate based on the distribution.
 
@@ -84,53 +84,53 @@ Percentiles are powerful for understanding relative positions within a dataset:
 The term "quartile" derives from "quarter," as each quartile represents one-fourth of the dataset.
 
 ### Calculating Quartiles
-Quartiles are calculated using the same percentile formula, setting \( p = 25 \), \( p = 50 \), and \( p = 75 \) for Q1, Q2, and Q3, respectively.
+Quartiles are calculated using the same percentile formula, setting $ p = 25 $,$ p = 50 $, and $ p = 75 $ for Q1, Q2, and Q3, respectively.
 
 #### Example
 Using the dataset: [2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 8, 9, 9, 10], calculate the quartiles.
 
 1. **First Quartile (Q1, 25th Percentile)**:
    - From the previous example, we calculated the 25th percentile as 3.5.
-   - Thus, \( Q1 = 3.5 \).
+   - Thus, $ Q1 = 3.5 $.
 
 2. **Second Quartile (Q2, 50th Percentile)**:
    - Position:
-     \[
+     $$
      \text{Position} = \frac{50}{100} \times (14 + 1) = 0.5 \times 15 = 7.5
-     \]
+     $$
    - The 7.5th position lies between the 7th and 8th values:
      - 7th value = 6, 8th value = 7.
    - Interpolate:
-     \[
+     $$
      Q2 = \frac{6 + 7}{2} = 6.5
-     \]
+     $$
 
 3. **Third Quartile (Q3, 75th Percentile)**:
    - Position:
-     \[
+     $$
      \text{Position} = \frac{75}{100} \times (14 + 1) = 0.75 \times 15 = 11.25
-     \]
+     $$
    - The 11.25th position lies between the 11th and 12th values:
      - 11th value = 8, 12th value = 9.
    - Interpolate:
-     \[
+     $$
      Q3 = \frac{8 + 9}{2} = 8.5
-     \]
+     $$
 
 Thus, the quartiles are:
-- \( Q1 = 3.5 \)
-- \( Q2 = 6.5 \) (median)
-- \( Q3 = 8.5 \)
+- $ Q1 = 3.5 $
+- $ Q2 = 6.5 $ (median)
+- $ Q3 = 8.5 $
 
 ### Interquartile Range (IQR)
 The **interquartile range** (IQR) is the difference between the third and first quartiles:
-\[
+$$
 \text{IQR} = Q3 - Q1
-\]
+$$
 For the example dataset:
-\[
+$$
 \text{IQR} = 8.5 - 3.5 = 5
-\]
+$$
 The IQR represents the spread of the middle 50% of the data, making it a robust measure of dispersion that is less sensitive to outliers than the range.
 
 ## Practical Applications
@@ -143,7 +143,7 @@ The IQR represents the spread of the middle 50% of the data, making it a robust 
 ### Quartiles
 - **Box Plots**: Quartiles are used to construct box plots, which visualize the distribution, median, and potential outliers in a dataset.
 - **Data Summarization**: Quartiles provide a five-number summary (minimum, Q1, Q2, Q3, maximum), offering a concise overview of data spread.
-- **Outlier Detection**: The IQR is used to identify outliers (values below \( Q1 - 1.5 \times \text{IQR} \) or above \( Q3 + 1.5 \times \text{IQR} \)).
+- **Outlier Detection**: The IQR is used to identify outliers (values below $ Q1 - 1.5 \times \text{IQR} $ or above $ Q3 + 1.5 \times \text{IQR} $).
 
 ## Comparison with Percentages
 Percentiles are often confused with percentages, but they are distinct:
@@ -151,7 +151,7 @@ Percentiles are often confused with percentages, but they are distinct:
 - **Percentile**: Indicates the relative position of a value within a distribution (e.g., the 50th percentile is the median, below which 50% of the data lies).
 
 For example, in the dataset [1, 2, 3, 4, 5, 6]:
-- **Percentage of odd numbers**: \( \frac{3}{6} \times 100 = 50\% \).
+- **Percentage of odd numbers**: $$ \frac{3}{6} \times 100 = 50\% $$.
 - **50th percentile**: The median, calculated as the average of the 3rd and 4th values (3 and 4), is 3.5, meaning 50% of the data is below 3.5.
 
 ## Additional Considerations
