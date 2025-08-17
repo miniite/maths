@@ -22,8 +22,13 @@ These five values provide a snapshot of the dataset's range, central tendency, a
 A **box plot** (or box-and-whisker plot) is a graphical representation of the five number summary, designed to visualize the distribution and identify outliers. The plot consists of:
 - A **box** spanning from Q1 to Q3, representing the interquartile range (IQR), which contains the middle 50% of the data.
 - A line inside the box marking the **median** (Q2).
-- **Whiskers** extending from the box to the minimum and maximum values (within a defined range).
+- **Whiskers** extending from the box to the minimum and maximum values (within a defined range). 
 - **Outliers**, plotted as individual points beyond the whiskers.
+
+**NOTE**
+- Whiskers extend to the minimum and maximum non-outlier values.
+- The fences are not drawn; they only mark the cutoff for outliers.
+- Outliers beyond the fences are plotted as individual points.
 
 Box plots are widely used in data analysis, supported by libraries like **Seaborn** in Python, to provide an intuitive visualization of data distribution and variability.
 
@@ -46,6 +51,9 @@ Outliers are data points that significantly deviate from the rest of the dataset
   $$
 
 Any value below the lower fence or above the upper fence is classified as an outlier.
+
+<img src="./img/boxplot.png"></img>
+<img src="./img/boxplot_desc.jpg"></img>
 
 ## Example: Calculating the Five Number Summary and Detecting Outliers
 

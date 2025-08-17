@@ -170,6 +170,10 @@ where $ s^2 $ is the sample variance. A positive value indicates right skew, a n
 | **Right-Skewed (Positive Skew)** | The right tail (higher values) is longer or fatter, often due to large outliers. Common in log-normal distributions (e.g., income, time-to-failure). | Mean ≥ Median ≥ Mode                | Longer right tail; more data points cluster on the left. | <li>Median is closer to Q1; <li> $ Q3 - Q2 > Q2 - Q1 $. <li> Upper whisker is longer, with potential outliers on the right. |
 | **Left-Skewed (Negative Skew)**  | The left tail (lower values) is longer or fatter, often due to small outliers. Common in datasets with a ceiling effect (e.g., test scores, age at death). | Mean ≤ Median ≤ Mode                | Longer left tail; more data points cluster on the right. | <li>Median is closer to Q3; <li>$ Q2 - Q1 > Q3 - Q2 $. <li>Lower whisker is longer, with potential outliers on the left. |
 
+<img src="./img/boxplot_skewness.png"></img>
+<img src="./img/Skewness.png" width="1000px"></img>
+<img src="./img/graph_boxplot.png"></img>
+
 
 
 ## Practical Applications
