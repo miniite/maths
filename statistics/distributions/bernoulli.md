@@ -4,7 +4,10 @@
 
 ## Introduction
 
-The **Bernoulli distribution** is one of the simplest and most fundamental discrete probability distributions in statistics, used to model experiments with exactly two possible outcomes: success or failure, typically coded as 1 and 0, respectively. This distribution forms the foundation for more complex distributions, such as the Binomial distribution, and is widely applied in scenarios involving binary outcomes, such as coin tosses, yes/no decisions, or binary classifications. In this article, we explore the Bernoulli distribution in detail, covering its definition, properties, probability mass function (PMF), parameters, statistical measures (mean, median, mode, variance, and standard deviation), and real-world applications. Examples and visualizations are included to provide a comprehensive understanding of how the Bernoulli distribution is used in data science and statistical analysis.
+- The **Bernoulli distribution** is one of the simplest and most fundamental discrete probability distributions in statistics,<text style = "color:lightgreen "> used to model experiments with exactly two possible outcomes: success or failure, typically coded as 1 and 0 </text>, respectively. 
+- This distribution forms the foundation for more complex distributions, such as the Binomial distribution, and is widely applied in scenarios involving binary outcomes, such as coin tosses, yes/no decisions, or binary classifications. 
+- In this article, we explore the Bernoulli distribution in detail, covering its definition, properties, probability mass function (PMF), parameters, statistical measures (mean, median, mode, variance, and standard deviation), and real-world applications. 
+- Examples and visualizations are included to provide a comprehensive understanding of how the Bernoulli distribution is used in data science and statistical analysis.
 
 ## Definition
 

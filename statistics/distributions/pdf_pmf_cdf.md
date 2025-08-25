@@ -102,11 +102,11 @@ The **cumulative distribution function (CDF)**, denoted $ F(x) $, gives the prob
 $$
 F(x) = P(X \leq x)
 $$
-- For **discrete random variables**, the CDF is the cumulative sum of the PMF:
+- For **discrete random variables**, the CDF is the cumulative sum of the PMF (*CMF - Cumulative Mass Function*):
   $$
   F(x) = \sum_{x_i \leq x} P(X = x_i)
   $$
-- For **continuous random variables**, the CDF is the integral of the PDF:
+- For **continuous random variables**, the CDF is the integral of the PDF (*CDF - Cumulative Density Function*):
   $$
   F(x) = \int_{-\infty}^{x} f(t) \, dt
   $$
@@ -178,6 +178,14 @@ The CDF is useful for calculating probabilities over intervals:
 1. **Finance**: PDFs model asset returns (e.g., log-normal distribution for stock prices), while CDFs calculate the probability of returns falling below a threshold.
 2. **Healthcare**: PDFs describe patient metrics like blood pressure, and CDFs estimate probabilities of outcomes like recovery within a time frame.
 3. **Quality Control**: PMFs model defect counts in manufacturing, and CDFs assess the likelihood of meeting quality standards.
+
+<br>
+
+> **NOTE**
+>
+> - PDF shows how dense the probability is around a value.
+> - CDF shows how much probability has accumulated up to a value.
+
 
 ## Python Implementation
 To visualize a PMF, PDF, and CDF for discrete and continuous data:

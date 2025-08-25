@@ -4,7 +4,11 @@
 
 ## Introduction
 
-In statistical analysis, understanding the distribution of data is crucial for modeling, interpreting, and making predictions from datasets. **Probability distributions** describe how probabilities are assigned to the values of a random variable, providing insights into the underlying patterns of the data. These distributions are essential for data scientists and analysts to perform exploratory data analysis (EDA), feature engineering, and predictive modeling. Building on the foundational concepts of **probability mass functions (PMFs)**, **probability density functions (PDFs)**, and **cumulative distribution functions (CDFs)**, this article explores the key types of probability distributions commonly encountered in data analysis. Each distribution is discussed with its characteristics, mathematical formulation, and practical applications, supported by examples to illustrate their relevance in real-world scenarios.
+- In statistical analysis, understanding the distribution of data is crucial for modeling, interpreting, and making predictions from datasets. 
+
+- **Probability distributions** describe how probabilities are assigned to the values of a random variable, providing insights into the underlying patterns of the data. 
+- These distributions are essential for data scientists and analysts to perform exploratory data analysis (EDA), feature engineering, and predictive modeling. 
+- Building on the foundational concepts of **probability mass functions (PMFs)**, **probability density functions (PDFs)**, and **cumulative distribution functions (CDFs)**, this article explores the key types of probability distributions commonly encountered in data analysis. Each distribution is discussed with its characteristics, mathematical formulation, and practical applications, supported by examples to illustrate their relevance in real-world scenarios.
 
 ## Importance of Probability Distributions
 

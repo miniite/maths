@@ -1,6 +1,6 @@
 
 
-# Covariance and Correlation in Statistical Analysis
+# Covariance  and Correlation in Statistical Analysis
 
 ## Introduction
 
